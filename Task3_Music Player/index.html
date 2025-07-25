@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مشغل آيات القرآن الكريم</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="music-player">
+      <div class="cover">
+        <img id="cover" src="https://i.imgur.com/I4n8vUq.jpg" alt="cover" />
+      </div>
+      <h2 id="title">سورة الفاتحة</h2>
+      <audio id="audio"></audio>
+
+      <div class="controls">
+        <button onclick="prevSong()"><i class="fas fa-backward"></i></button>
+        <button onclick="togglePlay()" id="playPauseBtn">
+          <i class="fas fa-play"></i>
+        </button>
+        <button onclick="nextSong()"><i class="fas fa-forward"></i></button>
+      </div>
+
+      <div class="progress-container" onclick="setProgress(event)">
+        <div class="progress" id="progress"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
